@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!--
+      This is the page head - it contains info the browser uses
+      Like the title, which appears on the browser tab but not inside the page
+      Further down you'll see the content that displays in the page
+    -->
+    <title>A death, a dot, a datapoint.</title>
+
+    <!-- The website stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!--The website JavaScript file -->
+
+    <script src="annotations.js" ></script>
+    <script src="years.js" ></script>
+    <script src="script.js" defer></script>
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+  </head>
+  
+  <body>
+    <span id="wrapper" role="main">
+    
+      <div id="headerWrap">
+        <div id="header" class="headerCont"></div>
+        <div id="titleDiv">
+            <h1 class="title">A death, a dot,<br/>a datapoint.</h1>
+            <div id="byline">Katie Anderson-Kelly | May 2024</div>
+        </div>  
+      </div>
+      
+    <div id="upperContent" class="content">
+
+      
+      <div>
+        <!--Preamble text-->
+        <p>When my father died he left behind many things. His grieving family and friends, his unfinished projects and incomplete plans, sixty-three years of his accumulated life accoutrements, and any number of people and places changed in some way by knowing him. He also left his digital footprint - modest, by today’s standards, as Dad was a man from before the time of chronically online lives, but indisputably existent. Thousands of photographs lurking on harddrives, hundreds of files with his name in the authorship metadata, umpteen sent emails and outgoing phone calls. Entries in countless databases - a passport, a drivers licence, library cards, movement records, electoral rolls, census entries, bank accounts, customer loyalty programs, on and on it goes. Digital traces of my father left on systems and servers scattered around the globe. 
+        </p>
+        <p>One of the last of these traces was Dad’s death record which, in time, became an anonymised observation in the Australian National Mortality Database and the Australian Cancer Database. My father’s death became one datapoint subsumed amongst millions of others to form a measurement of how Australians die. Our collective loss is quantified, cleaned, and structured. Our loved ones are anonymised into a handful of attributes, then aggregated into totals and proportions, redrawn as lines and bars. The distance afforded by this transformation allows for a refocus, a shift in perspective that allows a different view to emerge.  
+        </p>
+      </div>
+        <!--Line chart viz-->
+      
+      <div class="chartheading">The proportion of people who die within 5 years of being diagnosed with cancer is steadily decreasing</div>      
+      <div class="viz" style="min-height:424px"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/QWMG8/embed.js?v=4" charset="utf-8"></script><noscript><img src="https://datawrapper.dwcdn.net/QWMG8/full.png" alt="" /></noscript></div>        <!--Bar chart preamble-->           
+      <div>
+        <p>When distilled and neatly ordered these death records form a bigger picture, allowing us to see  changes in their landscape. With advances in early detection and treatment, over the last few decades Australia has seen a steady and substantial decline in the proportion of people who die of cancer within five years of their diagnosis. 
+        </p>
+        <p>This is a hopeful story. But it is not the only story these datapoints can tell us. 
+        </p>
+      </div>
+        <!--Bar chart viz-->
+      <div class="chartheading">Yet the number of cancer deaths increases year on year</div>
+      <div class="viz" style="min-height:334px"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/yvwPj/embed.js?v=9" charset="utf-8"></script><noscript><img src="https://datawrapper.dwcdn.net/yvwPj/full.png" alt="" /></noscript></div>        <!--Icon chart preamble-->           
+      <div>
+        <p>If we focus in just on the numerator, we see that the number of Australians who die from cancer consistently increases every year. The reality of our growing and ageing population is that while cancer is now more survivable, more people are dying of cancer. In 2009, when my father died of cancer, so did 41,000 other Australians. Last year, it killed 10,000 more than that.
+        </p>
+      </div>
+      <!--Icon chart-->
+      <div class = "viz">  
+      <div class="chartheading">An estimated 51,269 Australians died of cancer in 2023</div>
+      <div id="iconChart">
+        <span class="iconItem">Below the age of 50</span>
+        <span id="ib50" class="iconItem"></span>
+        <span class="iconItem">Aged 50‑59</span>
+        <span id="i50" class="iconItem"></span>
+        <span class="iconItem">Aged 60‑69</span>
+        <span id="i60" class="iconItem"></span>
+        <span class="iconItem">Aged 70‑79</span>
+        <span id="i70" class="iconItem"></span>
+        <span class="iconItem">Above the age of 80</span>
+        <span id="ia80" class="iconItem"></span>
+       </div>
+      <div id="iconLegend">
+        <img src = "assets/pictogram.svg" id="iLegendIcon">= 1,000 people
+      </div>
+      </div>
+      <p>Faceting the data can tell us yet more stories. Age is among the handful of attributes remaining to our anonymised data points, and adding this to our view tells us that the vast majority of Australians killed by cancer are older people. This added information provides more context to situate ourselves in the story. Who you see in this data depends on where you stand.        
+      </p>
+        <!--dot video preamble-->           
+      <div>
+        <p>Even as these pictogram proxies try to make it easier to see the people behind the number, an attempt to focus our gaze on them renders this number unfathomable. What is 51,000 people? Half the MCG? The entire town of Port Macquarie? 1,000 buses? The search for a comprehensible comparator leaves us flailing in our own context. To understand, perhaps we need to hear a smaller story.        
+        </p>
+      </div>
+      <!--Dot video-->           
+      <div class = "centrePic" margin-bottom="0px">        
+        <div class="chartheading">That's 140 people killed by cancer every day</div>
+        <center><video id="dotVideo"   autoplay muted >
+          <source src="https://cdn.glitch.me/f137e12e-2cb1-4066-bf17-45354413ba30/dots-viz.mp4?v=1716812728636" type="video/mp4" class = "centrePic">
+        Your browser does not support the video tag.
+        </video></center>
+      </div>      
+      <p>A single day becomes a little easier to understand. We can spend a moment with each of these datapoints, see each death as a single event. Compressed into just a few minutes and stripped of identity, 140 deaths are made more visible. Yet 140 people are still more than we can hold in our mind. Do we need to go smaller again? 
+      </p>
+      <!--Dot photograph section-->           
+     
+      <div class="viz">
+      <div class="chartheading">Or the equivalent of six people an&nbsp;hour</div>
+      <!--Dot photographs-->           
+      <div id="dotPhotoSection">
+        <div class="dotPhotoContainer">
+          <div id="dp1" class="dotPhoto"></div>
+          <p><b>Margot</b>, 92</p>
+          <p><i>Colorectal cancer</i></p>
+        </div>
+        <div class="dotPhotoContainer">
+          <div id="dp2" class="dotPhoto"></div>
+          <p><b>James</b>, 87</p>
+          <p><i>Lung cancer</i></p>
+        </div>
+        <div class="dotPhotoContainer">
+          <div id="dp3" class="dotPhoto"></div>
+          <p><b>Patrick</b>, 91</p>
+          <p><i>Prostate cancer</i></p>
+        </div>
+        <div class="dotPhotoContainer">
+          <div id="dp4" class="dotPhoto"></div>
+          <p><b>Judith</b>, 62</p>
+          <p><i>Breast cancer</i></p>
+        </div>
+        <div class="dotPhotoContainer">
+          <div id="dp5" class="dotPhoto"></div>
+          <p><b>David</b>, 49</p>
+          <p><i>Pancreatic cancer</i></p>
+        </div>
+        <div class="dotPhotoContainer">
+          <div id="dp6" class="dotPhoto"></div>
+          <p><b>Maria</b>, 73</p>
+          <p><i>Lung cancer</i></p>
+        </div>   
+      </div>         
+      </div>
+      <div>
+        <p>An hour is easier again to comprehend. In an hour, you can take a walk, listen to an album, or cook and eat a meal. Imagine sitting at a dinner table with six other people. It’s easy enough to learn the names and faces of six people sitting around a table, to learn a little about them. 
+        </p>
+      </div>
+      
+      <!--Single dot preamble-->           
+      <div>
+        <p>The big picture is gone, but we start to see something else.
+        </p>
+      </div>
+      <!--Single dot photograph-->
+      <div class="chartheading">Every death is someone special</div>
+      <div class="dotPhotoContainer centrePic">    
+        <div id="dpSingle" class="dotPhoto"></div>
+          <p><b>Gordon Anderson</b>, 63</p>
+        <p><i>Cancer of unknown primary site</i></p>
+      </div>
+      <div>
+        <p>This story is not intended to be an obituary, so I will just say that my father was someone special, who left an irreparable Dad shaped hole in my life. The small black dot of his death, that single datapoint, is a marker of both his life and my loss, but it tells you essentially nothing about either. 
+        </p>
+      </div>
+      <!--FoG section preamble-->           
+      <div>
+        <p>This year, I charted the story of this loss, materialising fifteen years of my grief in yarn. My tangled emotions categorised and colour-coded, my memories crocheted into crooked rows. 
+        </p>
+        <p>I remember…</p>
+      </div>
+    </div>
+
+<!--FoG section-->
+        <div id="breakoutInstructions">
+          <p id = "swipeText">◀<span class="instructionText"> Swipe to view chart &nbsp;</span>▶</p>
+          <p id = "scrollText"><span class="instructionText"> Scroll sideways to view chart</span></p>
+
+        </div>
+      
+      <div id="breakoutSection">
+
+
+      <div id="breakout">
+        <div id="breakoutLeftArrow" class = "breakoutArrow preventSelect" type="button">◀</div>
+        <div id="breakoutRightArrow" class = "breakoutArrow preventSelect" type="button">▶</div>
+                  <button id = "modalBtn">How to read this chart</button>
+
+
+        <img
+          src="assets/FoGDetail.webp"
+          alt="Editor illustration"
+          id = "FoGDetail"
+          </>
+        <div id="breakoutText"></div>
+        <div id="breakoutYears"></div>
+      </div>
+    </div>
+        
+      
+      <div id = "legendBackground"></div>
+      <div id="legendModal">
+        <button id="close">&times;</button>
+        <h2 class="modalH2">How to read this chart</h2>
+            <p class = "modalText">Each row of the scarf represents a memory or time in my grief journey.</p>
+        <div id="modalContent">
+          <div id="modalColours">
+            <h3 class="modalH3">Colour</h3>
+            <p class = "modalText">Colour represents the emotions associated with a memory. Some emotions have variant shades, representing the different ways a feeling can manifest.</p>
+            <div id="modalColoursContainer">
+            <div class="modalColour">
+              <h4 class="modalH4">Grief</h4>
+              <img src = "assets/l-grief.webp" class = "modalImg" />
+            </div>
+            <div class="modalColour">
+              <h4 class="modalH4">Longing</h4>
+              <img src = "assets/l-longing.webp" class = "modalImg" />
+            </div>
+            <div class="modalColour">
+              <h4 class="modalH4">Connection</h4>
+              <img src = "assets/l-connection.webp" class = "modalImg" />
+            </div>           
+            <div class="modalColour">
+              <h4 class="modalH4">Anguish</h4>
+              <img src = "assets/l-despair.webp" class = "modalImg" />
+            </div>             
+            <div class="modalColour">
+              <h4 class="modalH4">Numb</h4>
+              <img src = "assets/l-numb.webp" class = "modalImg" />
+            </div>
+            <div class="modalColour">
+              <h4 class="modalH4">Forbearance</h4>
+              <img src = "assets/l-forbearance.webp" class = "modalImg" />
+            </div>
+            <div class="modalColour">
+              <h4 class="modalH4">Gratitude</h4>
+              <img src = "assets/l-gratitude.webp" class = "modalImg" />
+            </div>
+            <div class="modalColour">
+              <h4 class="modalH4">Joy</h4>
+              <img src = "assets/l-joy.webp" class = "modalImg" />
+            </div>
+            <div class="modalColour">
+              <h4 class="modalH4">Relief</h4>
+              <img src = "assets/l-relief.webp" class = "modalImg" />
+            </div>             
+            <div class="modalColour">
+              <h4 class="modalH4">Guilt</h4>
+              <img src = "assets/l-guilt.webp" class = "modalImg" />
+            </div>    
+            <div class="modalColour">
+              <h4 class="modalH4">Empathy</h4>
+              <img src = "assets/l-empathy.webp" class = "modalImg" />
+            </div> 
+            <div class="modalColour">
+              <h4 class="modalH4">Health anxiety</h4>
+              <img src = "assets/l-healthanxiety.webp" class = "modalImg" />
+            </div> 
+             <div class="modalColour">
+              <h4 class="modalH4">Family conflict</h4>
+              <img src = "assets/l-familyconflict.webp" class = "modalImg" />
+            </div> 
+          </div>
+          </div>
+          <div id="modalSubContainer">
+          <div id="modalStitches">
+            <h3 class="modalH3">Stitch type</h3>
+            <p class = "modalText">Stitch type represents the clarity of the memory.</p>
+            <div class="modalStitch">
+              <h4 class="modalH4">Full coverage</h4>
+              <img src = "assets/l-s-full.webp" class = "modalImg" />
+              <p class = "modalText">Rows with full coverage stitches represent a specific memory.</p>
+            </div>
+            <div class="modalStitch">
+              <h4 class="modalH4">Partial coverage</h4>
+              <img src = "assets/l-s-holes.webp" class = "modalImg" />
+              <p class = "modalText">Rows with partial coverage stitches represent a month with no specific memories.</p>
+            </div>          
+          </div>
+          <div id="modalBorder">
+            <h3 class="modalH3">Tick marks</h3>
+            <p class = "modalText">Memories are. squentially arranged, with tick makes showing the passage of time.</p>
+            <div class="modalTick">
+              <h4 class="modalH4">Long tick mark</h4>
+              <img src = "assets/edge-long2.webp" class = "modalImg" />
+              <p class = "modalText">Long ticks mark Dad's birthday or birth month (August).</p>
+            </div>
+            </br>
+            <div class="modalTick" id="shortTick">
+              <h4 class="modalH4">Short tick mark</h4>
+              <img src = "assets/edge-short2.webp" class = "modalImg" />
+              <p class = "modalText">Short ticks mark a new month.</p> 
+            </div></br>
+            <p class = "modalText">Rows with no tick are memories in the same month as the preceeding row.</p>
+          </div>
+            
+          </div>
+        </div>
+     </div> 
+      
+
+      
+    <div id="lowerContent" class="content">
+      <div id="breakoutCaption">
+      <p id="caption"><i>Fifteen Years of Grief</i>, 2024, crochet yarn and memories, 480x21cm.</p>
+      </div>  
+      <!--FoG text-->           
+      <div>
+        <p>What colour is grief? I have known the colour of my grief for fifteen years, since a counsellor once asked me to visualise letting my feelings drain away. I closed my eyes and saw myself floating in the ocean, with the waters around me stained purple as the grief flowed out. Yet it is also so much more than that. It is aching, yearning blues, the longing of staring into the sky and the sea. It is the basking yellow sunshine of connection. The deep green forest of relief, and the nauseating vomit of guilt. It is the dim fog of numbness and the yawning darkness of anguish and all the shades of grey in between. It is the soft warm white lights of joy and gratitude, and so many other colours beside. 
+        </p>
+      </div>
+
+      <!--FoG photographs-->           
+      <div id="FoGPhotos">
+        <img src="assets/doc1.jpg"
+             class = "FoGPhoto"
+             </>
+        <img src="assets/doc2.jpg"
+             class = "FoGPhoto"
+             </>
+        <img src="assets/doc3.jpg"
+             class = "FoGPhoto"
+             </>
+        <img src="assets/doc4.jpg"
+             class = "FoGPhoto"
+             </>        
+      </div>
+      <div>
+        <p>Through this process, the grief that dwells in my mind and body has been externalised, pulled out of me and into the physical world. The form and function of this tangible grief object are shaped by the relationship I have with my grief. Sometimes it is a warm hug, a remembered embrace of love. Sometimes it’s suffocating, so thick I could choke. Sometimes it’s a thing to be held tenderly, to be given grace and space. Always it carries on, changing as I change, part of the fabric of my life. 
+        </p>
+      </div>
+      <!--Outro-->           
+      <div>
+        <p>In the fifteen years since my father died over 695,000 Australians have died from cancer. Each death recorded as a datapoint, added to our datasets. We measure how people die to help us shape how people live. Quantification and abstraction are a necessary process in the function of our society, with decisions made and resources allocated based on aggregation and analysis. But the tiny pieces of information we collect are deceptive, representing an enormity that we cannot record. Those 695,000 people left behind an exponential number of bereaved people with immeasurable griefs. We cannot distil this into a simple number, it cannot be made visible in a single view, and yet it is an intrinsic part of this story and should not be left unseen.
+        </p>
+        <p>Looking at data is something like a magic eye trick. Sometimes, it’s important to shift your focus, even if just for a moment. 
+        </p>
+      
+      <img
+        src="assets/footer.webp"
+        class="centrePic"
+        alt="Editor illustration"
+        width="250px"
+        </>
+      </div>
+    </div>
+</span>
+    <!-- The footer holds our remix button — you can keep or delete it ✂ -->
+    <footer class="footer content">
+      <p>Katie Anderson-Kelly, Australian National University School of Art and Design, 2024.</p>
+      <p>The cancer data used in this article is from <i></i><a href="https://www.aihw.gov.au/reports/cancer/cancer-data-in-australia">Cancer data in Australia</a></i> (Australian Institute of Health and Welfare, 2023).</p>
+      <p>If you're interested, you can also <a href="assets/documentation.pdf">read about the process</a> of creating this work.</p>
+      <p>With thanks always to my husband, who helped me make the space to make this project possible.</p>
+  </footer>
+  </body>
+</html>
