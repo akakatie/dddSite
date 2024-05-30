@@ -191,35 +191,35 @@ h3 {
   mask-repeat: no-repeat;
 }
 
-#dp1{background-image: url("assets/woman-1.jpg");
+#dp1{background-image: url("assets/woman-1.jpeg");
   -webkit-mask-image: url("assets/dot1.svg");
   mask-image: url("assets/dot1.svg");}
 
-#dp2{background-image: url("assets/man-1.jpg");
+#dp2{background-image: url("assets/man-1.jpeg");
   -webkit-mask-image: url("assets/dot2.svg");
   mask-image: url("assets/dot2.svg");}
 
-#dp3{background-image: url("assets/man-2.jpg");
+#dp3{background-image: url("assets/man-2.jpeg");
   -webkit-mask-image: url("assets/dot3.svg");
   mask-image: url("assets/dot3.svg");}
 
-#dp4{background-image: url("assets/woman-2.jpg");
+#dp4{background-image: url("assets/woman-2.jpeg");
   -webkit-mask-image: url("assets/dot4.svg");
   mask-image: url("assets/dot4.svg");}
 
-#dp5{background-image: url("assets/man-3.jpg");
+#dp5{background-image: url("assets/man-3.jpeg");
   -webkit-mask-image: url("assets/dot5.svg");
   mask-image: url("assets/dot5.svg");}
 
-#dp6{background-image: url("assets/woman-3.jpg");
+#dp6{background-image: url("assets/woman-3.jpeg");
   -webkit-mask-image: url("assets/dot6.svg");
   mask-image: url("assets/dot6.svg");}
 
 #dpSingle {
   height: 150px;
   width: 150px;
-  background-image: url("assets/dad.jpg");
-  -webkit-mask-image: url("assets/dot7.svg");
+  background-image: url("assets/dad.jpeg");
+  -webkit-mask-image: url("assets/dot7.sveg");
   mask-image: url("assets/dot7.svg");
   margin-top: 6px;
 }

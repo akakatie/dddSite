@@ -21,7 +21,7 @@ window.onload = function() {
   
   //Icon chart image population
   var icon = new Image();
-  icon.src = "/assets/pictogram.svg/assets";
+  icon.src = "assets/pictogram.svg";
   icon.classList.add("personIcon");
   
   populateIcons(document.getElementById("ib50"),2, icon);
