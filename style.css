@@ -219,7 +219,7 @@ h3 {
   height: 150px;
   width: 150px;
   background-image: url("assets/dad.jpeg");
-  -webkit-mask-image: url("assets/dot7.sveg");
+  -webkit-mask-image: url("assets/dot7.svg");
   mask-image: url("assets/dot7.svg");
   margin-top: 6px;
 }
